@@ -72,7 +72,7 @@ class Dispatcher extends BaseDispatcher
     {
         $listener = parent::makeListener($listener, $wildcard);
 
-        return Serialization::wrapClosure($listener);
+        return $listener;
     }
 
     /**
